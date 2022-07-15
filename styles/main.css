@@ -1,0 +1,71 @@
+body {
+    background-image: url(../assets/img/ep_naturalwhite.png);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 20px;
+}
+
+.ul_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    display: block;
+    background: #ececed;
+    padding: 15px 30px;
+    font-size: 14px;
+    color: rgb(2, 2, 2);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.header_nav>ul li {
+    position: relative;
+    border: 1px solid black;
+}
+
+.link:hover {
+    background: rgb(27, 27, 27);
+    color: white;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all .3s;
+}
+
+/* sub menu */
+
+.header_nav li ul {
+    position: absolute;
+    width: 148px;
+    display: none;
+}
+
+.header_nav li>ul li {
+    border: 1px solid black;
+}
+
+.header_nav li>ul li a {
+    padding: 10px;
+}
+
+.header_nav li>ul li ul {
+    position: absolute;
+    right: -130px;
+    top: 0;
+    width: 130px;
+}
+
+.header_nav li:hover>ul {
+    display: block;
+}
